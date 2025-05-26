@@ -1,0 +1,36 @@
+speakeasyVersion: 1.551.0
+sources:
+    Attio API:
+        sourceNamespace: attio-api
+        sourceRevisionDigest: sha256:cf59e908c903b4bb3f6efcb4f8b7765ae17fafd279120a131bd573bfcce03acd
+        sourceBlobDigest: sha256:1e7487821480a1ae46c467ceb39167770e82afecbb6f98c41ad0892a7f2ba7f4
+        tags:
+            - latest
+            - 2.0.0
+targets:
+    attio:
+        source: Attio API
+        sourceNamespace: attio-api
+        sourceRevisionDigest: sha256:cf59e908c903b4bb3f6efcb4f8b7765ae17fafd279120a131bd573bfcce03acd
+        sourceBlobDigest: sha256:1e7487821480a1ae46c467ceb39167770e82afecbb6f98c41ad0892a7f2ba7f4
+        codeSamplesNamespace: attio-api-python-code-samples
+        codeSamplesRevisionDigest: sha256:ae532ed766e886e032880104dd3ab26bbb7281f03059e320d5768cbb1ce4cac8
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Attio API:
+            inputs:
+                - location: attio-spec.json
+            registry:
+                location: registry.speakeasyapi.dev/chalk-ai/chalk-ai/attio-api
+    targets:
+        attio:
+            target: python
+            source: Attio API
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/chalk-ai/chalk-ai/attio-api-python-code-samples
+                labelOverride:
+                    fixedValue: Python (SDK)
+                blocking: false

@@ -1,0 +1,18 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Attio API:
+        inputs:
+            - location: attio-spec.json
+        registry:
+            location: registry.speakeasyapi.dev/chalk-ai/chalk-ai/attio-api
+targets:
+    attio:
+        target: python
+        source: Attio API
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/chalk-ai/chalk-ai/attio-api-python-code-samples
+            labelOverride:
+                fixedValue: Python (SDK)
+            blocking: false
