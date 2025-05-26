@@ -3,11 +3,11 @@
 import importlib.metadata
 
 __title__: str = "growth-machine-sdk-attio-python"
-__version__: str = "0.0.1"
+__version__: str = "0.0.2"
 __openapi_doc_version__: str = "2.0.0"
 __gen_version__: str = "2.610.0"
 __user_agent__: str = (
-    "speakeasy-sdk/python 0.0.1 2.610.0 2.0.0 growth-machine-sdk-attio-python"
+    "speakeasy-sdk/python 0.0.2 2.610.0 2.0.0 growth-machine-sdk-attio-python"
 )
 
 try:
